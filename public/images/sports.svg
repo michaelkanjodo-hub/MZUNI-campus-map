@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Illustration of sports & recreation">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d9ead6"/><stop offset="1" stop-color="#f4f3e9"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#sky)"/><circle cx="540" cy="62" r="29" fill="#fff4c9" opacity=".85"/>
+<path d="M0 224Q120 143 253 205T640 178V340H0Z" fill="#bdd0b5"/><path d="M0 250 Q160 160 320 235T640 205V340H0Z" fill="#9cbd84"/><path d="M0 278 Q180 230 360 277T640 244V340H0Z" fill="#6d9a70"/><ellipse cx="515" cy="250" rx="105" ry="42" fill="#edf2dc"/><path d="M435 250h160M515 208v84" stroke="#fff" stroke-width="4" opacity=".8"/><circle cx="515" cy="250" r="23" fill="none" stroke="#fff" stroke-width="4"/>
+<rect x="18" y="18" width="278" height="40" rx="20" fill="#fff" opacity=".94"/><text x="36" y="44" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1" fill="#397147">SPORTS & RECREATION</text>
+<text x="620" y="342" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#fff">ILLUSTRATIVE PLACEHOLDER</text></svg>

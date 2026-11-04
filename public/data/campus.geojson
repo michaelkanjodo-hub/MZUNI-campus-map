@@ -1,0 +1,377 @@
+{
+  "type": "FeatureCollection",
+  "name": "Mzuzu University campus — demonstration data",
+  "metadata": {
+    "coordinateStatus": "TO BE VERIFIED ON SITE",
+    "disclaimer": "All names, room allocations, opening hours, telephone numbers and coordinates are realistic placeholders for software demonstration only. Verify every feature with Mzuzu University before public use.",
+    "campus": "Mzuzu University, Mzuzu, Northern Malawi",
+    "center": [34.0072, -11.4378],
+    "bounds": [[34.0005, -11.4440], [34.0145, -11.4315]],
+    "walkingSpeedKmh": 4.8,
+    "version": 1,
+    "updatedAt": "2026-11-04T00:00:00Z"
+  },
+  "announcements": [
+    {
+      "id": "welcome-2026",
+      "title": "Welcome to campus",
+      "message": "New here? Start at the Main Gate information point or search for your lecture room.",
+      "type": "info",
+      "active": true,
+      "expiresAt": "2027-12-31"
+    },
+    {
+      "id": "path-works-demo",
+      "title": "Demonstration closure",
+      "message": "The shortcut beside the Science Labs is marked closed to demonstrate route detours.",
+      "type": "warning",
+      "active": true,
+      "expiresAt": "2027-12-31"
+    }
+  ],
+  "features": [
+    {
+      "type": "Feature",
+      "id": "main-gate",
+      "geometry": { "type": "Point", "coordinates": [34.0032, -11.4418] },
+      "properties": {
+        "kind": "location", "name": "Main Gate", "shortName": "Main Gate", "category": "services", "type": "Gate",
+        "description": "Primary pedestrian and vehicle entrance. The visitor information point and campus security are beside the gate.",
+        "nearestNode": "n-main", "openingHours": "Open 24 hours", "floors": 0, "photo": "/images/gate.svg",
+        "facilities": ["Security", "Visitor information", "Accessible entrance"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "administration",
+      "geometry": { "type": "Point", "coordinates": [34.0053, -11.4391] },
+      "properties": {
+        "kind": "location", "name": "Administration Block", "shortName": "Admin", "category": "services", "type": "Administration",
+        "description": "Student administration, admissions, records and finance enquiries. Visit the reception desk for directions to a specific office.",
+        "nearestNode": "n-admin", "openingHours": "Mon–Fri, 07:30–16:30", "floors": 2, "photo": "/images/admin.svg",
+        "facilities": ["Toilets", "Ramp", "Reception", "Accessible toilet"], "coordinateStatus": "TO BE VERIFIED ON SITE",
+        "rooms": [
+          { "id": "registrar", "name": "Office of the Registrar", "floor": 1, "wing": "North wing", "keywords": ["Registrar", "student records"], "indoorHint": "Enter through the main doors and use the stairs on the left. The Registrar's office is the third door on the right on Floor 1.", "accessibleHint": "Use the ramp at the east entrance and ask reception for lift assistance." },
+          { "id": "admissions", "name": "Admissions Office", "floor": 0, "wing": "Reception wing", "keywords": ["Application", "Admission"], "indoorHint": "Enter the main reception. Admissions is the first office on the left." },
+          { "id": "finance", "name": "Student Finance", "floor": 0, "wing": "South wing", "keywords": ["Fees", "Payments"], "indoorHint": "From reception, follow the right-hand corridor. Student Finance is at the end." }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "library",
+      "geometry": { "type": "Point", "coordinates": [34.0072, -11.4363] },
+      "properties": {
+        "kind": "location", "name": "University Library", "shortName": "Library", "category": "academic", "type": "Library",
+        "description": "Main learning resource centre with quiet study areas, group tables, short-loan books and computer access.",
+        "nearestNode": "n-library", "openingHours": "Mon–Fri, 07:00–22:00 · Sat–Sun, 08:00–20:00", "floors": 3, "photo": "/images/library.svg",
+        "facilities": ["Wi-Fi", "Toilets", "Lift", "Ramp", "Quiet study", "Computers"], "coordinateStatus": "TO BE VERIFIED ON SITE",
+        "rooms": [
+          { "id": "lib-reading", "name": "Main Reading Room", "floor": 1, "wing": "Central wing", "keywords": ["Study", "Reading"], "indoorHint": "Enter the main door, take the central stairs to Floor 1 and pass through the glass doors ahead.", "accessibleHint": "The lift is immediately right of the main entrance. Select Floor 1." },
+          { "id": "lib-shortloan", "name": "Short Loan Desk", "floor": 0, "wing": "East wing", "keywords": ["Books", "Borrow"], "indoorHint": "From the entrance lobby, turn right. The Short Loan Desk is beside the security gate." },
+          { "id": "lib-204", "name": "Room 204", "floor": 2, "wing": "West wing", "courses": ["BIT 201"], "keywords": ["BIT 201", "204"], "indoorHint": "Enter the main door, take the stairs on the left to Floor 2. Room 204 is the second door on the right.", "accessibleHint": "Use the lift right of reception, exit on Floor 2 and turn right into the west wing." }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lecture-hall-1",
+      "geometry": { "type": "Point", "coordinates": [34.0066, -11.4381] },
+      "properties": {
+        "kind": "location", "name": "Lecture Hall 1", "shortName": "LH 1", "category": "academic", "type": "Lecture hall",
+        "description": "Large teaching theatre used for lectures, seminars and university presentations.",
+        "nearestNode": "n-central", "openingHours": "Mon–Fri, 06:30–20:00", "floors": 1, "photo": "/images/lecture.svg",
+        "facilities": ["Projector", "Ramp", "Accessible seating", "Toilets nearby"], "coordinateStatus": "TO BE VERIFIED ON SITE",
+        "rooms": [
+          { "id": "lh1-main", "name": "LH 1 Main Theatre", "floor": 0, "wing": "Main theatre", "courses": ["COM 101", "BIT 201"], "keywords": ["LH1", "LH 1"], "indoorHint": "Use either entrance from the central concourse. Accessible seating is in the front row beside the east door." }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lecture-hall-2",
+      "geometry": { "type": "Point", "coordinates": [34.0057, -11.4375] },
+      "properties": {
+        "kind": "location", "name": "Lecture Hall 2", "shortName": "LH 2", "category": "academic", "type": "Lecture hall",
+        "description": "Teaching hall on the western side of the academic concourse.",
+        "nearestNode": "n-central", "openingHours": "Mon–Fri, 06:30–20:00", "floors": 1, "photo": "/images/lecture.svg",
+        "facilities": ["Projector", "Accessible entrance"], "coordinateStatus": "TO BE VERIFIED ON SITE",
+        "rooms": [{ "id": "lh2-main", "name": "LH 2 Main Theatre", "floor": 0, "wing": "Main theatre", "courses": ["MAT 110"], "keywords": ["LH2", "LH 2"], "indoorHint": "Enter from the covered walkway. The theatre is directly ahead." }]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lecture-hall-3",
+      "geometry": { "type": "Point", "coordinates": [34.0061, -11.4368] },
+      "properties": {
+        "kind": "location", "name": "Lecture Hall 3", "shortName": "LH 3", "category": "academic", "type": "Lecture hall",
+        "description": "General-purpose lecture space north of the central academic concourse.",
+        "nearestNode": "n-library", "openingHours": "Mon–Fri, 06:30–20:00", "floors": 2, "photo": "/images/lecture.svg",
+        "facilities": ["Projector", "Toilets", "Stairs"], "coordinateStatus": "TO BE VERIFIED ON SITE",
+        "rooms": [
+          { "id": "lh3-b12", "name": "Room B12", "floor": 0, "wing": "B wing", "courses": ["BIT 201", "CSC 210"], "keywords": ["B12", "Room B12"], "indoorHint": "Enter through the main door and turn left into B wing. Room B12 is the second door on the right." },
+          { "id": "lh3-204", "name": "Room 204", "floor": 1, "wing": "A wing", "courses": ["EDU 202"], "keywords": ["204"], "indoorHint": "From the lobby, take the stairs on the right. Turn left at the landing; Room 204 is straight ahead." }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "computer-lab",
+      "geometry": { "type": "Point", "coordinates": [34.0102, -11.4356] },
+      "properties": {
+        "kind": "location", "name": "ICT & Computer Laboratories", "shortName": "Computer Labs", "category": "academic", "type": "Laboratory",
+        "description": "Computer teaching suites and ICT support for practical classes and student projects.",
+        "nearestNode": "n-labs", "openingHours": "Mon–Fri, 07:00–21:00 · Sat, 08:00–16:00", "floors": 2, "photo": "/images/ict.svg",
+        "facilities": ["Wi-Fi", "Computers", "Air conditioning", "Ramp", "Toilets"], "coordinateStatus": "TO BE VERIFIED ON SITE",
+        "rooms": [
+          { "id": "comp-lab-1", "name": "Computer Lab 1", "floor": 0, "wing": "East wing", "courses": ["BIT 201", "CSC 110"], "keywords": ["Computer Lab", "CL 1"], "indoorHint": "Enter via the ramped east entrance. Lab 1 is the first door on the left after ICT reception." },
+          { "id": "comp-lab-2", "name": "Computer Lab 2", "floor": 1, "wing": "East wing", "courses": ["CSC 310"], "keywords": ["CL 2"], "indoorHint": "Take the stairs beside reception to Floor 1. Lab 2 is at the far end of the east corridor." },
+          { "id": "ict-support", "name": "ICT Support Desk", "floor": 0, "wing": "Reception", "keywords": ["ICT help", "Password", "Wi-Fi"], "indoorHint": "The support desk is directly inside the east entrance." }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "science-labs",
+      "geometry": { "type": "Point", "coordinates": [34.0110, -11.4362] },
+      "properties": {
+        "kind": "location", "name": "Science Laboratories", "shortName": "Science Labs", "category": "academic", "type": "Laboratory",
+        "description": "Teaching laboratories for science practical sessions. Follow laboratory safety instructions and wear required protective equipment.",
+        "nearestNode": "n-labs", "openingHours": "Mon–Fri, 07:30–17:00", "floors": 1, "photo": "/images/science.svg",
+        "facilities": ["Emergency shower", "First aid", "Accessible entrance"], "coordinateStatus": "TO BE VERIFIED ON SITE",
+        "rooms": [{ "id": "bio-lab", "name": "Biology Lab", "floor": 0, "wing": "North wing", "courses": ["BIO 121"], "keywords": ["Biology"], "indoorHint": "Report to the preparation-room desk first. Biology Lab is through the marked door in the north wing." }]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cafeteria",
+      "geometry": { "type": "Point", "coordinates": [34.0094, -11.4385] },
+      "properties": {
+        "kind": "location", "name": "Campus Cafeteria", "shortName": "Cafeteria", "category": "food", "type": "Food & drink",
+        "description": "Casual meals, snacks and drinks with indoor and shaded outdoor seating.",
+        "nearestNode": "n-food", "openingHours": "Mon–Sat, 06:30–20:00 · Sun, 08:00–18:00", "floors": 1, "photo": "/images/cafeteria.svg",
+        "facilities": ["Seating", "Drinking water", "Toilets", "Step-free entrance"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tuck-shop",
+      "geometry": { "type": "Point", "coordinates": [34.0087, -11.4378] },
+      "properties": {
+        "kind": "location", "name": "Student Tuck Shop", "shortName": "Tuck Shop", "category": "food", "type": "Shop",
+        "description": "Quick snacks, stationery and everyday student essentials near the academic concourse.",
+        "nearestNode": "n-food", "openingHours": "Mon–Sat, 07:00–19:00", "floors": 0, "photo": "/images/cafeteria.svg",
+        "facilities": ["Snacks", "Stationery"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "clinic",
+      "geometry": { "type": "Point", "coordinates": [34.0039, -11.4356] },
+      "properties": {
+        "kind": "location", "name": "University Clinic", "shortName": "Clinic", "category": "emergency", "type": "Health",
+        "description": "First point of contact for campus health services and urgent first aid. In a serious emergency, call security as well.",
+        "nearestNode": "n-clinic", "openingHours": "Mon–Fri, 07:30–20:00 · Emergency assistance 24 hours", "floors": 1, "photo": "/images/clinic.svg",
+        "facilities": ["First aid", "Accessible entrance", "Private consultation"], "phone": "+265 999 000 001", "phoneStatus": "PLACEHOLDER — VERIFY BEFORE USE", "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "security",
+      "geometry": { "type": "Point", "coordinates": [34.0040, -11.4408] },
+      "properties": {
+        "kind": "location", "name": "Campus Security Office", "shortName": "Security", "category": "emergency", "type": "Security",
+        "description": "Campus security, lost property and visitor assistance, just inside the Main Gate.",
+        "nearestNode": "n-gate", "openingHours": "Open 24 hours", "floors": 0, "photo": "/images/gate.svg",
+        "facilities": ["Emergency response", "Lost property", "Visitor assistance"], "phone": "+265 999 000 002", "phoneStatus": "PLACEHOLDER — VERIFY BEFORE USE", "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sports-ground",
+      "geometry": { "type": "Point", "coordinates": [34.0048, -11.4338] },
+      "properties": {
+        "kind": "location", "name": "Sports Ground", "shortName": "Sports Ground", "category": "sports", "type": "Sports",
+        "description": "Open playing field for football, athletics practice, sports clubs and campus recreation.",
+        "nearestNode": "n-sports", "openingHours": "Daily, 06:00–18:30", "floors": 0, "photo": "/images/sports.svg",
+        "facilities": ["Football pitch", "Changing rooms", "Water point"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sports-hall",
+      "geometry": { "type": "Point", "coordinates": [34.0058, -11.4343] },
+      "properties": {
+        "kind": "location", "name": "Indoor Sports Hall", "shortName": "Sports Hall", "category": "sports", "type": "Sports",
+        "description": "Indoor court space for basketball, volleyball, badminton and student fitness activities.",
+        "nearestNode": "n-sports", "openingHours": "Mon–Sat, 07:00–20:00", "floors": 1, "photo": "/images/sports.svg",
+        "facilities": ["Changing rooms", "Toilets", "Step-free entrance"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hostel-a",
+      "geometry": { "type": "Point", "coordinates": [34.0105, -11.4338] },
+      "properties": {
+        "kind": "location", "name": "Hostel A", "shortName": "Hostel A", "category": "hostels", "type": "Accommodation",
+        "description": "Student residence on the northern side of campus. Visitors should report to the hostel office.",
+        "nearestNode": "n-hostel", "openingHours": "Residents only · Reception 07:00–20:00", "floors": 2, "photo": "/images/hostel.svg",
+        "facilities": ["Study room", "Laundry", "Water point"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hostel-b",
+      "geometry": { "type": "Point", "coordinates": [34.0116, -11.4341] },
+      "properties": {
+        "kind": "location", "name": "Hostel B", "shortName": "Hostel B", "category": "hostels", "type": "Accommodation",
+        "description": "Student residence close to the eastern footpath, with shared study and laundry spaces.",
+        "nearestNode": "n-hostel", "openingHours": "Residents only · Reception 07:00–20:00", "floors": 2, "photo": "/images/hostel.svg",
+        "facilities": ["Study room", "Laundry", "Ramp"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "hostel-c",
+      "geometry": { "type": "Point", "coordinates": [34.0100, -11.4329] },
+      "properties": {
+        "kind": "location", "name": "Hostel C", "shortName": "Hostel C", "category": "hostels", "type": "Accommodation",
+        "description": "Northern campus student accommodation. Follow the pedestrian path from the Computer Laboratories.",
+        "nearestNode": "n-hostel", "openingHours": "Residents only · Reception 07:00–20:00", "floors": 2, "photo": "/images/hostel.svg",
+        "facilities": ["Study room", "Laundry", "Toilets"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "east-gate",
+      "geometry": { "type": "Point", "coordinates": [34.0128, -11.4380] },
+      "properties": {
+        "kind": "location", "name": "East Gate", "shortName": "East Gate", "category": "services", "type": "Gate",
+        "description": "Secondary pedestrian entrance on the eastern side of campus. Access may vary outside teaching hours.",
+        "nearestNode": "n-eastgate", "openingHours": "Mon–Fri, 06:00–19:00", "floors": 0, "photo": "/images/gate.svg",
+        "facilities": ["Pedestrian access", "Security"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bus-stop",
+      "geometry": { "type": "Point", "coordinates": [34.0028, -11.4422] },
+      "properties": {
+        "kind": "location", "name": "Main Gate Bus Stop", "shortName": "Bus Stop", "category": "services", "type": "Transport",
+        "description": "Roadside pickup and drop-off point outside the Main Gate. Confirm local transport arrangements on arrival.",
+        "nearestNode": "n-main", "openingHours": "Always accessible", "floors": 0, "photo": "/images/gate.svg",
+        "facilities": ["Shelter", "Seating"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "atm",
+      "geometry": { "type": "Point", "coordinates": [34.0050, -11.4395] },
+      "properties": {
+        "kind": "location", "name": "Campus ATM", "shortName": "ATM", "category": "services", "type": "Money",
+        "description": "Automated teller machine beside the Administration Block. Network availability may vary.",
+        "nearestNode": "n-admin", "openingHours": "Open 24 hours", "floors": 0, "photo": "/images/admin.svg",
+        "facilities": ["Cash withdrawal", "Step-free access"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "parking",
+      "geometry": { "type": "Point", "coordinates": [34.0080, -11.4397] },
+      "properties": {
+        "kind": "location", "name": "Visitor Parking", "shortName": "Parking", "category": "services", "type": "Parking",
+        "description": "Designated visitor and accessible parking spaces near the central campus road.",
+        "nearestNode": "n-south", "openingHours": "Mon–Sun, 06:00–22:00", "floors": 0, "photo": "/images/gate.svg",
+        "facilities": ["Accessible parking", "Lighting"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bookshop",
+      "geometry": { "type": "Point", "coordinates": [34.0077, -11.4360] },
+      "properties": {
+        "kind": "location", "name": "Campus Bookshop", "shortName": "Bookshop", "category": "services", "type": "Shop",
+        "description": "Textbooks, course materials, printing and stationery beside the library.",
+        "nearestNode": "n-library", "openingHours": "Mon–Fri, 08:00–16:30", "floors": 0, "photo": "/images/library.svg",
+        "facilities": ["Printing", "Stationery", "Textbooks"], "coordinateStatus": "TO BE VERIFIED ON SITE"
+      }
+    },
+
+    {
+      "type": "Feature", "id": "path-main-gate", "geometry": { "type": "LineString", "coordinates": [[34.0032, -11.4418], [34.0036, -11.4413], [34.0042, -11.4408]] },
+      "properties": { "kind": "path", "name": "Main entrance walk", "from": "n-main", "to": "n-gate", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-gate-admin", "geometry": { "type": "LineString", "coordinates": [[34.0042, -11.4408], [34.0046, -11.4400], [34.0050, -11.4392]] },
+      "properties": { "kind": "path", "name": "Administration approach", "from": "n-gate", "to": "n-admin", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-admin-central", "geometry": { "type": "LineString", "coordinates": [[34.0050, -11.4392], [34.0055, -11.4386], [34.0062, -11.4378]] },
+      "properties": { "kind": "path", "name": "Academic concourse south", "from": "n-admin", "to": "n-central", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-central-library", "geometry": { "type": "LineString", "coordinates": [[34.0062, -11.4378], [34.0065, -11.4372], [34.0068, -11.4365]] },
+      "properties": { "kind": "path", "name": "Library concourse", "from": "n-central", "to": "n-library", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-library-north", "geometry": { "type": "LineString", "coordinates": [[34.0068, -11.4365], [34.0069, -11.4357], [34.0075, -11.4349]] },
+      "properties": { "kind": "path", "name": "North academic walk", "from": "n-library", "to": "n-north", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-north-labs", "geometry": { "type": "LineString", "coordinates": [[34.0075, -11.4349], [34.0087, -11.4350], [34.0106, -11.4358]] },
+      "properties": { "kind": "path", "name": "Laboratory walk", "from": "n-north", "to": "n-labs", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-library-labs-shortcut", "geometry": { "type": "LineString", "coordinates": [[34.0068, -11.4365], [34.0086, -11.4364], [34.0106, -11.4358]] },
+      "properties": { "kind": "path", "name": "Science shortcut", "from": "n-library", "to": "n-labs", "surface": "gravel", "accessible": false, "closed": true, "closureReason": "Demonstration construction closure", "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-labs-hostel", "geometry": { "type": "LineString", "coordinates": [[34.0106, -11.4358], [34.0108, -11.4350], [34.0107, -11.4339]] },
+      "properties": { "kind": "path", "name": "Hostel footpath", "from": "n-labs", "to": "n-hostel", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-north-hostel", "geometry": { "type": "LineString", "coordinates": [[34.0075, -11.4349], [34.0089, -11.4337], [34.0107, -11.4339]] },
+      "properties": { "kind": "path", "name": "Northern residences walk", "from": "n-north", "to": "n-hostel", "surface": "gravel", "accessible": false, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-central-west", "geometry": { "type": "LineString", "coordinates": [[34.0062, -11.4378], [34.0048, -11.4375], [34.0032, -11.4370]] },
+      "properties": { "kind": "path", "name": "West campus walk", "from": "n-central", "to": "n-west", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-west-clinic", "geometry": { "type": "LineString", "coordinates": [[34.0032, -11.4370], [34.0035, -11.4363], [34.0038, -11.4357]] },
+      "properties": { "kind": "path", "name": "Clinic approach", "from": "n-west", "to": "n-clinic", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-clinic-sports", "geometry": { "type": "LineString", "coordinates": [[34.0038, -11.4357], [34.0041, -11.4348], [34.0047, -11.4339]] },
+      "properties": { "kind": "path", "name": "Sports ground walk", "from": "n-clinic", "to": "n-sports", "surface": "gravel", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-sports-north", "geometry": { "type": "LineString", "coordinates": [[34.0047, -11.4339], [34.0060, -11.4338], [34.0075, -11.4349]] },
+      "properties": { "kind": "path", "name": "Northern perimeter path", "from": "n-sports", "to": "n-north", "surface": "gravel", "accessible": false, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-admin-south", "geometry": { "type": "LineString", "coordinates": [[34.0050, -11.4392], [34.0065, -11.4398], [34.0084, -11.4396]] },
+      "properties": { "kind": "path", "name": "Central campus road", "from": "n-admin", "to": "n-south", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-south-food", "geometry": { "type": "LineString", "coordinates": [[34.0084, -11.4396], [34.0091, -11.4390], [34.0095, -11.4386]] },
+      "properties": { "kind": "path", "name": "Cafeteria approach", "from": "n-south", "to": "n-food", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-food-central", "geometry": { "type": "LineString", "coordinates": [[34.0095, -11.4386], [34.0080, -11.4382], [34.0062, -11.4378]] },
+      "properties": { "kind": "path", "name": "Cafeteria concourse", "from": "n-food", "to": "n-central", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-food-east", "geometry": { "type": "LineString", "coordinates": [[34.0095, -11.4386], [34.0099, -11.4381], [34.0103, -11.4377]] },
+      "properties": { "kind": "path", "name": "East concourse", "from": "n-food", "to": "n-east", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-east-gate", "geometry": { "type": "LineString", "coordinates": [[34.0103, -11.4377], [34.0116, -11.4377], [34.0128, -11.4380]] },
+      "properties": { "kind": "path", "name": "East Gate road", "from": "n-east", "to": "n-eastgate", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    },
+    {
+      "type": "Feature", "id": "path-east-labs", "geometry": { "type": "LineString", "coordinates": [[34.0103, -11.4377], [34.0104, -11.4367], [34.0106, -11.4358]] },
+      "properties": { "kind": "path", "name": "Laboratory approach", "from": "n-east", "to": "n-labs", "surface": "paved", "accessible": true, "closed": false, "coordinateStatus": "TO BE VERIFIED ON SITE" }
+    }
+  ]
+}

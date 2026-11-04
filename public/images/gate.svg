@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Illustration of mzuzu university">
+<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d9e7df"/><stop offset="1" stop-color="#f4f3e9"/></linearGradient></defs>
+<rect width="640" height="360" fill="url(#sky)"/><circle cx="540" cy="62" r="29" fill="#fff4c9" opacity=".85"/>
+<path d="M0 224Q120 143 253 205T640 178V340H0Z" fill="#bdd0b5"/><path d="M0 273 640 233v107H0Z" fill="#b9c6b4"/><path d="m0 309 640-42v73H0Z" fill="#91a88c"/><rect x="118" y="130" width="404" height="141" rx="5" fill="#075b50"/><path d="m94 137 226-79 226 79Z" fill="#b9e77b"/><rect x="146" y="158" width="348" height="113" fill="#f5f1e8"/><path d="M172 271V157M238 271V157M402 271V157M468 271V157" stroke="#075b50" stroke-width="14"/><path d="M270 271v-75q50-34 100 0v75" fill="#075b50"/><path d="M153 181h78M409 181h78M153 215h78M409 215h78" stroke="#b7d5d7" stroke-width="18"/>
+<rect x="18" y="18" width="278" height="40" rx="20" fill="#fff" opacity=".94"/><text x="36" y="44" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1" fill="#075b50">MZUZU UNIVERSITY</text>
+<text x="620" y="342" text-anchor="end" font-family="Arial,sans-serif" font-size="10" fill="#fff">ILLUSTRATIVE PLACEHOLDER</text></svg>
